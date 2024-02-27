@@ -1,0 +1,17 @@
+networks:
+  matcha:
+    name: matcha
+
+services:
+  db:
+    build: ./db/
+    image: database
+  front-end:
+    build: ./front
+    image: front-end
+  API:
+    build: ./API/
+    image: API
+  nginx:
+    build: ./nginx/
+    image: nginx
